@@ -35,7 +35,7 @@ Like mentioned previously, the first step is to input the independent and depend
 
 <img src="data in jamovi.png">
 
-In the case of the study, the independent variable is the SLOC or Source Lines of Code and the dependent variable is the Number of Bug Fixes that occur. The Coding Language column serves as labels and were the sources of each of the data points in the original data set. The next step is to click the ‘Regression’ button which can be seen in Figure n. From here, a dropdown menu will appear.
+In the case of the study, the independent variable is the SLOC or Source Lines of Code and the dependent variable is the Number of Bug Fixes that occur. The Coding Language column serves as labels and were the sources of each of the data points in the original data set. The next step is to click the ‘Regression’ button which can be seen in Figure 1. From here, a dropdown menu will appear.
 
 <img src="regression dropdown menu.png">
 <br>
@@ -47,7 +47,7 @@ The first step is to press ‘Linear Regression’. This will take the user to a
 <br>
 *Figure 3. Selection of variables.*
 
-Simply select the variable in the first menu and click the corresponding arrow to which variable it should be. Independent variables go into “Covariates” and the dependent variable goes into its corresponding box. After which, the program automatically calculates for the corresponding values and displays them in a table. To create a scatter plot, click “Exploration” seen in Figure n. From there, click “Scatter Plot”.
+Simply select the variable in the first menu and click the corresponding arrow to which variable it should be. Independent variables go into “Covariates” and the dependent variable goes into its corresponding box. Click the grey arrow at the top right of Figure 3, to which the program calculates for the corresponding values and displays them in a table. To create a scatter plot, click “Exploration” seen in Figure 1. From there, click “Scatter Plot”.
 
 <img src="scatterplot interface.png">
 <br>
@@ -55,7 +55,7 @@ Simply select the variable in the first menu and click the corresponding arrow t
 
 Input the corresponding values into the respective axes (independent on X, dependent on Y). This will generate the scatter plot. To add the regression line, simply click “Linear” under ‘Regression Line’, which is on None by default. To see labels for specific data points (but remove the regression line), input “Coding Language” into Group.
 
-All generated tables and graphs will be shown on the right hand side of the interface shown in Figure n. (replacing the Jamovi logo and version number)
+All generated tables and graphs will be shown on the right hand side of the interface shown in Figure 1. (replacing the Jamovi logo and version number)
 <br>
 <h1>Results and Discussion</h1>
 	
@@ -66,7 +66,7 @@ The ‘Linear Regression’ table generated with the data gathered is as shown:
 <br>
 <img src="regression data.png">
 <br>
-The data that is important from this table is the r (correlation coefficient) and the p-value. This is all visualized via the scatter plot that was generated.
+The data that is important from this table is the r (correlation coefficient) and the p-value. All of this is visualized in the scatter plot that was generated.
 
 <img src="scatterplot w line.png">
 <br>
