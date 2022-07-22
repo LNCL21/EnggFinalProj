@@ -1,32 +1,104 @@
 ---
-title: "index"
-author: "Paolo Ong"
+title: "The Relationship Between Source Lines of Code (SLOC) and the Number of Bug Fixes That Occur"
+author: "Daveigh Abogado, Jasmin Blancia, Luis Nathan Luna, Paolo Ong, Gena Tusi"
 date: '2022-07-22'
 output: 
   html_document:
       css: styles.css
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+<h1>Introduction</h1>
+Numerous software attribute measurements have been created and researched in an effort to describe the underlying structure of computer programs. It has been demonstrated that several of these indicators are connected to real data on program quality. However, most measures of software quality are often created over a longer period of time. Any size of program requires years of operation before latent flaws are discovered [1].
+In recent studies, metrics of software complexity have been demonstrated to be highly correlated with how defects are distributed among computer programs. There is a connection between some complexity measures and the quantity of modifications attributable to flaws subsequently discovered in test and validation [2].
+In this study, the researchers investigated the correlation between a metric for software complexity, namely the number of source lines of code in projects, and the number of bug fixes that had to be accomplished. This was performed in order to determine the viability of code length as a predictor for the quantity of flaws that affect code quality of programming projects. Investigating such correlation contributes to the foundation of research on the development of predictors of faults in specific lines of code [3] and even overall software projects [4].
+<br>
+<h1>Methodology</h1>
 
-## R Markdown
+The dataset was obtained through a similar study committed by Kocchar, et. al, titled “A Large Scale Study of Multiple Programming Languages and Code Quality”. The study aims to observe how using different programming languages compare to programs in only one in terms of quality of the program created with said language. In the study, the authors obtained the data by retrieving the code and GitHub Archive of the top 50 programs for each of the top 17 programming languages. For this specific analysis, the focus will be on the program size and the bug fixes and errors.
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+To attain the data in the previously mentioned study, the authors obtained the GitHub Archives of the projects, and for the variables we will be observing, the authors observed the commit logs where the bug fixes can be seen, while to obtain the program size, calculations were made using the total number of lines of code.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+ 
+*[placeholder text for this part of the methodology]*<!--Replace this with the contents of this part of the methodology-->
 
-```{r cars}
-summary(cars)
-```
+To perform the analysis of the two variables, the free software Jamovi was used. This software allows the user to input their variables and data and perform statistical analysis on them automatically, such as T-Tests, ANOVA, and most importantly, Linear Regression. 
+<br>
+<br>
+<img src="jamovi interface.png">
+*Figure 1. Interface of Jamovi.*
+<br>
+<br>
+Like mentioned previously, the first step is to input the independent and dependent variables.
 
-## Including Plots
 
-You can also embed plots, for example:
+*Table 1. Data inputted into Jamovi.*
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+<img src="data in jamovi.png">
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+In the case of the study, the independent variable is the SLOC or Source Lines of Code and the dependent variable is the Number of Bug Fixes that occur. The Coding Language column serves as labels and were the sources of each of the data points in the original data set. The next step is to click the ‘Regression’ button which can be seen in Figure n. From here, a dropdown menu will appear.
+
+<img src="regression dropdown menu.png">
+<br>
+*Figure 2. Dropdown menu after clicking Regression*
+
+The first step is to press ‘Linear Regression’. This will take the user to a section where they can select which of the variables they placed is the independent and dependent variable.
+
+<img src="Selection of variables.png">
+<br>
+*Figure 3. Selection of variables.*
+
+Simply select the variable in the first menu and click the corresponding arrow to which variable it should be. Independent variables go into “Covariates” and the dependent variable goes into its corresponding box. After which, the program automatically calculates for the corresponding values and displays them in a table. To create a scatter plot, click “Exploration” seen in Figure n. From there, click “Scatter Plot”.
+
+<img src="scatterplot interface.png">
+<br>
+*Figure 4. Interface for Scatter plot*
+
+Input the corresponding values into the respective axes (independent on X, dependent on Y). This will generate the scatter plot. To add the regression line, simply click “Linear” under ‘Regression Line’, which is on None by default. To see labels for specific data points (but remove the regression line), input “Coding Language” into Group.
+
+All generated tables and graphs will be shown on the right hand side of the interface shown in Figure n. (replacing the Jamovi logo and version number)
+<br>
+<h1>Results and Discussion</h1>
+	
+The ‘Linear Regression’ table generated with the data gathered is as shown:
+
+
+*Table 2. Linear Regression table.*
+<br>
+<img src="regression data.png">
+<br>
+The data that is important from this table is the r (correlation coefficient) and the p-value. This is all visualized via the scatter plot that was generated.
+
+<img src="scatterplot w line.png">
+<br>
+*Figure 5. Scatter plot of two variables with regression line.*
+<br>
+<img src="scatterplot w labeled data points.png">
+*Figure 6. Labels for each data point. The top right data point refers to C, while the bottom right data point refers to TypeScript.*
+<br>
+*[placeholder text for discussion section]* <!--Replace this with the contents of the actual discussion-->
+<br>
+<h1>Conclusion and Recommendations</h1>
+*[placeholder text for conclusion and recommendation]* <!--Replace this with the contents of the actual conclusion-->
+<br>
+<br>
+<br>
+<footer>
+<h2>References</h2>
+[1] J. C. Munson and T. M. Khoshgoftaar, “The detection of fault-prone programs,” IEEE Transactions on Software
+<br>
+Engineering, vol. 18, no. 5, pp. 423–433, 1992.
+<br>
+<br>
+[2] V.Y. Shen, T. Yu, S. M. Thebaut, and L. R. Paulsen, “Identifying error-prone software-an empirical study,’’ IEEE
+<br>
+Trans. Software Eng., vol. SE-11, pp. 317-323, Apr. 1985.
+<br>
+<br>
+[3] M. Lipow, “Number of faults per line of code,” IEEE Trans. Software Eng., vol. SE-8, pp. 437-439, 1982
+<br>
+<br>
+[4] W. R. Dillon and M. Goldstein, Multivariate Analysis. New York: Wiley, 1984.
+<br>
+<br>
+[5]
+</footer>
