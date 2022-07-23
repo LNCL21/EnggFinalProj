@@ -1,0 +1,25 @@
+body {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.5;
+  margin-left: 96px;
+  margin-right: 96px;
+  margin-bottom: 96px;
+  font-size: 16px;
+}
+h1{
+  font-weight: bold;
+  font-size: 40px;
+}
+div.blockquote{
+  padding: 60px 100px 60px 250px;
+}
+p.caption{
+  font-size: 12px;
+}
+h2{
+  font-weight: bold;
+}
+footer{
+  font-size: 12px;
+}
