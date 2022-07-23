@@ -6,10 +6,14 @@ output:
   html_document:
       css: styles.css
 ---
-
+<body>
 <h1>Introduction</h1>
 Numerous software attribute measurements have been created and researched in an effort to describe the underlying structure of computer programs. It has been demonstrated that several of these indicators are connected to real data on program quality. However, most measures of software quality are often created over a longer period of time. Any size of program requires years of operation before latent flaws are discovered [1].
+<br>
+<br>
 In recent studies, metrics of software complexity have been demonstrated to be highly correlated with how defects are distributed among computer programs. There is a connection between some complexity measures and the quantity of modifications attributable to flaws subsequently discovered in test and validation [2].
+<br>
+<br>
 In this study, the researchers investigated the correlation between a metric for software complexity, namely the number of source lines of code in projects, and the number of bug fixes that had to be accomplished. This was performed in order to determine the viability of code length as a predictor for the quantity of flaws that affect code quality of programming projects. Investigating such correlation contributes to the foundation of research on the development of predictors of faults in specific lines of code [3] and even overall software projects [4].
 <br>
 <h1>Methodology</h1>
@@ -19,77 +23,93 @@ The dataset was obtained through a similar study committed by Kocchar, et. al, t
 To attain the data in the previously mentioned study, the authors obtained the GitHub Archives of the projects, and for the variables we will be observing, the authors observed the commit logs where the bug fixes can be seen, while to obtain the program size, calculations were made using the total number of lines of code.
 
  
-*[placeholder text for this part of the methodology]*<!--Replace this with the contents of this part of the methodology-->
-
+Given the data that the study will be focusing on, the group will be performing Linear Regression and Correlation Analysis. The relationship between the two variables will be determined, which means the hypotheses are the following:
+<br>
+<br>
+<div class="block quote">
+Ho: β1 = 0 (null)
+<br>
+H1: β1 ≠ 0 (alternative)
+</div>
+<br>
 To perform the analysis of the two variables, the free software Jamovi was used. This software allows the user to input their variables and data and perform statistical analysis on them automatically, such as T-Tests, ANOVA, and most importantly, Linear Regression. 
 <br>
 <br>
 <img src="jamovi interface.png">
-*Figure 1. Interface of Jamovi.*
+<p class="caption"> *Figure 1. Interface of Jamovi.*</p>
 <br>
 <br>
 Like mentioned previously, the first step is to input the independent and dependent variables.
-
-
-*Table 1. Data inputted into Jamovi.*
-
+<br>
+<br>
+<p class="caption"> *Table 1. Data inputted into Jamovi.* </p>
 <img src="data in jamovi.png">
-
+<br>
+<br>
 In the case of the study, the independent variable is the SLOC or Source Lines of Code and the dependent variable is the Number of Bug Fixes that occur. The Coding Language column serves as labels and were the sources of each of the data points in the original data set. The next step is to click the ‘Regression’ button which can be seen in Figure 1. From here, a dropdown menu will appear.
-
+<br>
+<br>
 <img src="regression dropdown menu.png">
 <br>
-*Figure 2. Dropdown menu after clicking Regression*
+<p class="caption"> *Figure 2. Dropdown menu after clicking Regression* </p>
 
 The first step is to press ‘Linear Regression’. This will take the user to a section where they can select which of the variables they placed is the independent and dependent variable.
 
 <img src="Selection of variables.png">
 <br>
-*Figure 3. Selection of variables.*
+<p class="caption"> *Figure 3. Selection of variables.* </p>
 
 Simply select the variable in the first menu and click the corresponding arrow to which variable it should be. Independent variables go into “Covariates” and the dependent variable goes into its corresponding box. Click the grey arrow at the top right of Figure 3, to which the program calculates for the corresponding values and displays them in a table. To create a scatter plot, click “Exploration” seen in Figure 1. From there, click “Scatter Plot”.
 
 <img src="scatterplot interface.png">
 <br>
-*Figure 4. Interface for Scatter plot*
+<p class="caption"> *Figure 4. Interface for Scatter plot* </p>
 
 Input the corresponding values into the respective axes (independent on X, dependent on Y). This will generate the scatter plot. To add the regression line, simply click “Linear” under ‘Regression Line’, which is on None by default. To see labels for specific data points (but remove the regression line), input “Coding Language” into Group.
 
 All generated tables and graphs will be shown on the right hand side of the interface shown in Figure 1. (replacing the Jamovi logo and version number)
 <br>
-<h1>Results and Discussion</h1>
+<h1>Results</h1>
 	
 The ‘Linear Regression’ table generated with the data gathered is as shown:
 
 
-*Table 2. Linear Regression table.*
-<br>
+<p class="caption"> *Table 2. Linear Regression table.* </p>
 <img src="regression data.png">
 <br>
 The data that is important from this table is the r (correlation coefficient) and the p-value. All of this is visualized in the scatter plot that was generated.
 
 <img src="scatterplot w line.png">
 <br>
-*Figure 5. Scatter plot of two variables with regression line.*
+<p class="caption"> *Figure 5. Scatter plot of two variables with regression line.* </p>
 <br>
 <img src="scatterplot w labeled data points.png">
-*Figure 6. Labels for each data point. The top right data point refers to C, while the bottom right data point refers to TypeScript.*
+<p class="caption"> *Figure 6. Labels for each data point. The top right data point refers to C, while the bottom right data point refers to TypeScript.* </p>
 <br>
-*[placeholder text for discussion section]* <!--Replace this with the contents of the actual discussion-->
+Despite C and TypeScript having almost the same source lines of code (SLOC) yet having a significant difference in the number of bug fixes, the scatterplot shown in the figures above displays a linear positive correlation between the two variables. This tells us that as the SLOC increases, the number of bug fixes increases relatively. 
+<br>
+<br>
+To determine the strength of this relationship, the correlation coefficient, r, is calculated. Table 2 shows the regression table associated with the scatterplot, and it is found that the data set has a correlation coefficient of 0.666 — a value close to 1. Hence, the source lines of code and the number of bug fixes have a strong linear positive correlation.
+
+<br>
+<h1>Discussion</h1>
+  The dataset used in this paper is lifted from the study of Kochhar et al., entitled A Large Scale Study of Multiple Programming Languages and Code Quality. The parameters of interest are focused on the source lines of code (SLOC) and the number of bug fixes as the independent variable and dependent variable, respectively. Two hypotheses were tested to determine whether they were statistically significant. The null hypothesis is given by Ho: β1 = 0 while the alternative hypothesis is denoted by H1: β1 ≠ 0.
+<br>
+<br>
+The analysis of the dataset is done with the help of software. The calculated correlation coefficient (R) is equal to 0.666, while the squared correlation coefficient (R2) is roughly equal to 0.444. Since R is near the value of 1, this suggests that there is a substantial correlation or direct relationship between the number of bug fixes and the SLOC. Moreover, the bug commits account for 44.4% of the variation in the source lines of code. 
+<br>
+<br>
+The standard error slope (SE) is 2.81. The data also revealed that the probability of observing the test statistic (*t* = 2.53) is 0.036. Furthermore, the dataset’s p-value is 0.036, which is less than the level of significance (*a*= 0.05).
 <br>
 <h1>Conclusion and Recommendations</h1>
-  The dataset used in this paper is lifted from the study of Kochhar et al., entitled A Large Scale Study of Multiple Programming Languages and Code Quality. The parameters of interest are focused on the source lines of code (SLOC) and the number of bug fixes as the independent variable and dependent variable, respectively. Two hypotheses were tested to determine whether they were statistically significant. The null hypothesis is given by Ho: β1 = 0 while the alternative hypothesis is denoted by H1: β1 ≠ 0.
+The data that was gathered is enough evidence to **reject the null hypothesis.** Ultimately, the source lines of code are statistically significant for the number of bug fixes in the programming languages, and therefore they have a relationship with one another.
+<br>
 
-	The analysis of the dataset is done with the help of software. The calculated correlation coefficient (R) is equal to 0.666, while the squared correlation coefficient (R2) is roughly equal to 0.444. Since R is near the value of 1, this suggests that there is a substantial correlation or direct relationship between the number of bug fixes and the SLOC. Moreover, the bug commits account for 44.4% of the variation in the source lines of code. 
-
-	The standard error slope (SE) is 2.81. The data also revealed that the probability of observing the test statistic (*t* = 2.53) is 0.036. Since the dataset’s p-value is 0.036, which is less than the level of significance (*a*= 0.05), we fail to accept the null hypothesis. In other words, the null hypothesis is rejected. Ultimately, the source lines of code are statistically significant for the number of bug fixes in the programming languages.
-
-  In light of this, the group recommends that future researchers inspect the correlation of other variables and delve deeper into the factors that influence the code quality of programming projects. Living in the 21st century, it is crucial for future developers to assess the risks posed by bugs in implementing software projects. It would be beneficial to investigate additional statistically significant variables for the quality of programming projects in order to reduce the likelihood of errors and other quality problems when creating intricate software projects. 
-
- <!--Replace this with the contents of the actual conclusion-->
+In light of this, the group recommends that future researchers inspect the correlation of other variables and delve deeper into the factors that influence the code quality of programming projects. Living in the 21st century, it is crucial for future developers to assess the risks posed by bugs in implementing software projects. It would be beneficial to investigate additional statistically significant variables for the quality of programming projects in order to reduce the likelihood of errors and other quality problems when creating intricate software projects. 
 <br>
 <br>
 <br>
+</body>
 <footer>
 <h2>References</h2>
 [1] J. C. Munson and T. M. Khoshgoftaar, “The detection of fault-prone programs,” IEEE Transactions on Software
