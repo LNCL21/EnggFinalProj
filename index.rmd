@@ -19,12 +19,12 @@ In this study, the researchers investigated the correlation between a metric for
 <br>
 <h1>Methodology</h1>
 
-The dataset was obtained through a similar study committed by Kocchar, et. al, titled *“A Large Scale Study of Multiple Programming Languages and Code Quality”*. The study aims to observe how using different programming languages compare to programs in only one in terms of quality of the program created with said language. In the study, the authors obtained the data by retrieving the code and GitHub Archive of the top 50 programs for each of the top 17 programming languages. For this specific analysis, the focus will be on the program size and it's relationship with bug fixes and errors, with the programming language also in consideration.
+The dataset was obtained through a similar study committed by Kocchar, et. al, entitled *A Large Scale Study of Multiple Programming Languages and Code Quality* [5]. The study aims to observe how using different programming languages compare to programs in only one in terms of quality of the program created with said language. In the study, the authors obtained the data by retrieving the code and GitHub Archive of the top 50 programs for each of the top 17 programming languages. For this specific analysis, the focus will be on the program size and it's relationship with bug fixes and errors, with the programming language also in consideration.
 
 To attain the data in the previously mentioned study, the authors made use of the GitHub Archives of the projects, and for the variables crucial to this analysis, the authors observed the commit logs where the bug fixes are visible, while to obtain the program size, calculations were made using the total number of lines of code.
 
  
-Given the data that the study will be focusing on, the group will be performing Linear Regression and Correlation Analysis. The relationship between the two variables will be determined, which means the hypotheses are the following:
+Given the data that the study will be focusing on, the group will be performing **Linear Regression and Correlation Analysis**. The relationship between the two variables will be determined, which means the hypotheses are the following:
 <br>
 <div class="blockquote">
 Ho: β1 = 0 (null)
@@ -96,7 +96,7 @@ It can therefore be concluded from the values obtained and the figures presented
 
 <br>
 <h1>Discussion</h1>
-  The dataset used in this paper is lifted from the study of Kochhar et al., entitled *A Large Scale Study of Multiple Programming Languages and Code Quality*. The parameters of interest are focused on the source lines of code (SLOC) and the number of bug fixes as the independent variable and dependent variable, respectively. Two hypotheses were tested to determine whether they were statistically significant. The null hypothesis is given by Ho: β1 = 0 while the alternative hypothesis is denoted by H1: β1 ≠ 0.
+  The dataset used in this paper is lifted from the study of Kochhar et al., entitled *A Large Scale Study of Multiple Programming Languages and Code Quality* [5]. The parameters of interest are focused on the source lines of code (SLOC) and the number of bug fixes as the independent variable and dependent variable, respectively. Two hypotheses were tested to determine whether they were statistically significant. The null hypothesis is given by Ho: β1 = 0 while the alternative hypothesis is denoted by H1: β1 ≠ 0.
 <br>
 <br>
 The analysis of the dataset is done with the help of software. The calculated correlation coefficient (R) is equal to 0.666, while the squared correlation coefficient (R2) is roughly equal to 0.444. Since R is near the value of 1, this suggests that there is a substantial correlation or direct relationship between the number of bug fixes and the SLOC. Moreover, the bug commits account for 44.4% of the variation in the source lines of code. 
@@ -132,7 +132,7 @@ Trans. Software Eng., vol. SE-11, pp. 317-323, Apr. 1985.
 [4] W. R. Dillon and M. Goldstein, Multivariate Analysis. New York: Wiley, 1984.
 <br>
 <br>
-[5]P. S. Kochhar, D. Wijedasa, and D. Lo, “A Large Scale Study of Multiple Programming Languages and Code Quality,”
+[5] P. S. Kochhar, D. Wijedasa, and D. Lo, “A Large Scale Study of Multiple Programming Languages and Code Quality,”
 <br>
 2016 IEEE 23rd International Conference on Software Analysis, Evolution, and Reengineering (SANER), pp. 563-573, 2016 
 </footer>
