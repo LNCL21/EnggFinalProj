@@ -19,7 +19,7 @@ In this study, the researchers investigated the correlation between a metric for
 <br>
 <h1>Methodology</h1>
 
-The dataset was obtained through a similar study committed by Kocchar, et. al, titled “A Large Scale Study of Multiple Programming Languages and Code Quality”. The study aims to observe how using different programming languages compare to programs in only one in terms of quality of the program created with said language. In the study, the authors obtained the data by retrieving the code and GitHub Archive of the top 50 programs for each of the top 17 programming languages. For this specific analysis, the focus will be on the program size and the bug fixes and errors.
+The dataset was obtained through a similar study committed by Kocchar, et. al, titled *“A Large Scale Study of Multiple Programming Languages and Code Quality”*. The study aims to observe how using different programming languages compare to programs in only one in terms of quality of the program created with said language. In the study, the authors obtained the data by retrieving the code and GitHub Archive of the top 50 programs for each of the top 17 programming languages. For this specific analysis, the focus will be on the program size and the bug fixes and errors.
 
 To attain the data in the previously mentioned study, the authors obtained the GitHub Archives of the projects, and for the variables we will be observing, the authors observed the commit logs where the bug fixes can be seen, while to obtain the program size, calculations were made using the total number of lines of code.
 
