@@ -15,6 +15,7 @@ In recent studies, metrics of software complexity have been demonstrated to be h
 <br>
 <br>
 In this study, the researchers investigated the correlation between a metric for software complexity, namely the number of source lines of code in projects, and the number of bug fixes that had to be accomplished. This was performed in order to determine the viability of code length as a predictor for the quantity of flaws that affect code quality of programming projects. Investigating such correlation contributes to the foundation of research on the development of predictors of faults in specific lines of code [3] and even overall software projects [4].
+
 <br>
 <h1>Methodology</h1>
 
@@ -25,19 +26,16 @@ To attain the data in the previously mentioned study, the authors obtained the G
  
 Given the data that the study will be focusing on, the group will be performing Linear Regression and Correlation Analysis. The relationship between the two variables will be determined, which means the hypotheses are the following:
 <br>
-<br>
-<div class="block quote">
+<div class="blockquote">
 Ho: β1 = 0 (null)
 <br>
 H1: β1 ≠ 0 (alternative)
 </div>
-<br>
 To perform the analysis of the two variables, the free software Jamovi was used. This software allows the user to input their variables and data and perform statistical analysis on them automatically, such as T-Tests, ANOVA, and most importantly, Linear Regression. 
 <br>
 <br>
 <img src="jamovi interface.png">
 <p class="caption"> *Figure 1. Interface of Jamovi.*</p>
-<br>
 <br>
 Like mentioned previously, the first step is to input the independent and dependent variables.
 <br>
@@ -50,29 +48,31 @@ In the case of the study, the independent variable is the SLOC or Source Lines o
 <br>
 <br>
 <img src="regression dropdown menu.png">
-<br>
 <p class="caption"> *Figure 2. Dropdown menu after clicking Regression* </p>
-
+<br>
 The first step is to press ‘Linear Regression’. This will take the user to a section where they can select which of the variables they placed is the independent and dependent variable.
+<br>
 
 <img src="Selection of variables.png">
 <br>
 <p class="caption"> *Figure 3. Selection of variables.* </p>
-
+<br>
 Simply select the variable in the first menu and click the corresponding arrow to which variable it should be. Independent variables go into “Covariates” and the dependent variable goes into its corresponding box. Click the grey arrow at the top right of Figure 3, to which the program calculates for the corresponding values and displays them in a table. To create a scatter plot, click “Exploration” seen in Figure 1. From there, click “Scatter Plot”.
 
 <img src="scatterplot interface.png">
 <br>
 <p class="caption"> *Figure 4. Interface for Scatter plot* </p>
-
+<br>
 Input the corresponding values into the respective axes (independent on X, dependent on Y). This will generate the scatter plot. To add the regression line, simply click “Linear” under ‘Regression Line’, which is on None by default. To see labels for specific data points (but remove the regression line), input “Coding Language” into Group.
 
 All generated tables and graphs will be shown on the right hand side of the interface shown in Figure 1. (replacing the Jamovi logo and version number)
+
 <br>
 <h1>Results</h1>
 	
 The ‘Linear Regression’ table generated with the data gathered is as shown:
-
+<br>
+<br>
 
 <p class="caption"> *Table 2. Linear Regression table.* </p>
 <img src="regression data.png">
@@ -100,6 +100,7 @@ The analysis of the dataset is done with the help of software. The calculated co
 <br>
 <br>
 The standard error slope (SE) is 2.81. The data also revealed that the probability of observing the test statistic (*t* = 2.53) is 0.036. Furthermore, the dataset’s p-value is 0.036, which is less than the level of significance (*a*= 0.05).
+
 <br>
 <h1>Conclusion and Recommendations</h1>
 The data that was gathered is enough evidence to **reject the null hypothesis.** Ultimately, the source lines of code are statistically significant for the number of bug fixes in the programming languages, and therefore they have a relationship with one another.
@@ -128,5 +129,7 @@ Trans. Software Eng., vol. SE-11, pp. 317-323, Apr. 1985.
 [4] W. R. Dillon and M. Goldstein, Multivariate Analysis. New York: Wiley, 1984.
 <br>
 <br>
-[5]
+[5]P. S. Kochhar, D. Wijedasa, and D. Lo, “A Large Scale Study of Multiple Programming Languages and Code Quality,”
+<br>
+2016 IEEE 23rd International Conference on Software Analysis, Evolution, and Reengineering (SANER), pp. 563-573, 2016 
 </footer>
