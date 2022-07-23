@@ -86,10 +86,13 @@ The data that is important from this table is the r (correlation coefficient) an
 <img src="scatterplot w labeled data points.png">
 <p class="caption"> *Figure 6. Labels for each data point. The top right data point refers to C, while the bottom right data point refers to TypeScript.* </p>
 <br>
-Despite C and TypeScript having almost the same source lines of code (SLOC) yet having a significant difference in the number of bug fixes, the scatterplot shown in the figures above displays a linear positive correlation between the two variables. This tells us that as the SLOC increases, the number of bug fixes increases relatively. 
+Despite C and TypeScript having almost the same source lines of code (SLOC) yet having a significant difference in the number of bug fixes, the scatterplot shown in the figures above displays an upward trend between the two variables. 
 <br>
 <br>
 To determine the strength of this relationship, the correlation coefficient, r, is calculated. Table 2 shows the regression table associated with the scatterplot, and it is found that the data set has a correlation coefficient of 0.666 — a value close to 1. Hence, the source lines of code and the number of bug fixes have a strong linear positive correlation.
+<br>
+<br>
+It can therefore be concluded from the values obtained and the figures presented that there is a direct linear relationship between the source lines of code and the number of bug fixes. In other words, as the SLOC increases, the number of bug fixes increases relatively. 
 
 <br>
 <h1>Discussion</h1>
