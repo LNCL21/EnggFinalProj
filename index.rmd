@@ -93,7 +93,7 @@ To determine the strength of this relationship, the correlation coefficient, r, 
 
 <br>
 <h1>Discussion</h1>
-  The dataset used in this paper is lifted from the study of Kochhar et al., entitled A Large Scale Study of Multiple Programming Languages and Code Quality. The parameters of interest are focused on the source lines of code (SLOC) and the number of bug fixes as the independent variable and dependent variable, respectively. Two hypotheses were tested to determine whether they were statistically significant. The null hypothesis is given by Ho: β1 = 0 while the alternative hypothesis is denoted by H1: β1 ≠ 0.
+  The dataset used in this paper is lifted from the study of Kochhar et al., entitled *A Large Scale Study of Multiple Programming Languages and Code Quality*. The parameters of interest are focused on the source lines of code (SLOC) and the number of bug fixes as the independent variable and dependent variable, respectively. Two hypotheses were tested to determine whether they were statistically significant. The null hypothesis is given by Ho: β1 = 0 while the alternative hypothesis is denoted by H1: β1 ≠ 0.
 <br>
 <br>
 The analysis of the dataset is done with the help of software. The calculated correlation coefficient (R) is equal to 0.666, while the squared correlation coefficient (R2) is roughly equal to 0.444. Since R is near the value of 1, this suggests that there is a substantial correlation or direct relationship between the number of bug fixes and the SLOC. Moreover, the bug commits account for 44.4% of the variation in the source lines of code. 
